@@ -35,7 +35,7 @@ Effects: custom teal scrollbar, smooth scroll, custom cursor, scroll-triggered a
 
 ```bash
 # Clone or unzip project
-cd apex-agency
+cd mithaq-outsource
 
 # Install dependencies (Yarn)
 yarn install
