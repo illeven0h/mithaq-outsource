@@ -1,4 +1,11 @@
-# Apex Agency — Premium Digital Services Website
+<<<<<<< HEAD
+# # Mithaq Outsource
+
+Official website for Mithaq Outsource — operations, digital growth, and business execution services.
+
+## Tech Stack
+
+Next.js 14 with App Router, TypeScript, Tailwind CSS, Framer Motion for animations, Three.js for 3D vis
 
 A cinematic, premium agency website built with Next.js 14, Tailwind CSS, Framer Motion, Three.js, and Lenis smooth scroll.
 
@@ -17,24 +24,12 @@ A cinematic, premium agency website built with Next.js 14, Tailwind CSS, Framer 
 
 ## Design System
 
-**Colors**
-- Background: `#0a0b0d` (deep graphite)
-- Accent Teal: `#00c9a7`
-- Accent Purple: `#a78bfa`
-- Typography: `#f0ede8` (warm off-white)
+Colors: warm off-white background (#f5f3ef), teal accent (#0d9e87), gold accent (#b8934a), deep ink (#16181c)
 
-**Fonts**
-- Display: Syne (headings, bold elements)
-- Body: DM Sans (clean, modern readability)
+Font: Urbanist
 
-**Effects**
-- Glassmorphism cards (`backdrop-filter: blur`)
-- Radial gradient lighting
-- Animated particle field (Three.js)
-- Wireframe sphere meshes
-- Custom magnetic cursor
-- Orbit animation (Why Us section)
-- Scroll-triggered section reveals (Framer Motion)
+Effects: custom teal scrollbar, smooth scroll, custom cursor, scroll-triggered animations, 3D particle field
+
 
 ## Setup
 
@@ -83,25 +78,15 @@ apex-agency/
 
 ## Sections
 
-1. **Hero** — 3D particle field, animated dashboard card, stat counters
-2. **Services** — 6 interactive glassmorphism cards with hover glow
-3. **Why Us** — Numbered features + orbiting icon visual
-4. **Process** — 6-step timeline with gradient connector line
-5. **Portfolio** — Case study grid with immersive project previews
-6. **Testimonials** — 3 animated review cards
-7. **Final CTA** — Emotionally persuasive closing section
-8. **Footer** — Clean minimal footer
+1. **Hero** 
+2. **Services**
+3. **Why Us**
+4. **Process** 
+5. **Testimonials**
+6. **Final CTA** 
+7. **Footer** 
 
-## Customization
-
-- Replace placeholder service icons with SVGs from [Lucide](https://lucide.dev) or [Tabler](https://tabler.io/icons)
-- Swap portfolio `bg` gradients with actual project screenshots
-- Update `metadata` in `app/layout.tsx` with real SEO content
-- Adjust color variables in `globals.css` to match your brand
-
-## Performance Notes
-
-- Three.js is lazy-imported inside `useEffect` to avoid SSR issues
-- All animations use `will-change: transform` via Framer Motion
-- Particle count (2000) is tuned for 60fps; reduce to 1000 on mobile if needed
-- Lenis + GSAP ScrollTrigger are initialized client-side only
+=======
+# mithaq-outsource
+Official website for Mithaq Outsource operations, digital growth, and business execution services.
+>>>>>>> 086709ab98eb6d4cc9b117946ccbf2b26803ff17
