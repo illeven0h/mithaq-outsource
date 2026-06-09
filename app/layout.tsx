@@ -11,7 +11,7 @@ const urbanist = Urbanist({
 })
 
 export const metadata: Metadata = {
-  title: 'Mithaq Outsource — Premium Digital & Operational Services',
+  title: 'Mithaq Outsource',
   description: 'Premium outsourcing, digital solutions, and customer operations — engineered for ambitious businesses that demand excellence at every touchpoint.',
 }
 
