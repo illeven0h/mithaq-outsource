@@ -1,5 +1,5 @@
 <<<<<<< HEAD
-# # Mithaq Outsource
+# Mithaq Outsource
 
 Official website for Mithaq Outsource — operations, digital growth, and business execution services.
 
@@ -85,8 +85,3 @@ apex-agency/
 5. **Testimonials**
 6. **Final CTA** 
 7. **Footer** 
-
-=======
-# mithaq-outsource
-Official website for Mithaq Outsource operations, digital growth, and business execution services.
->>>>>>> 086709ab98eb6d4cc9b117946ccbf2b26803ff17
