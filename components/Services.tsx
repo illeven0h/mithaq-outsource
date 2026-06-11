@@ -38,16 +38,16 @@ export default function Services(){
   const hRef=useRef(null)
   const hIn=useInView(hRef,{once:true})
   return (
-    <section id="services" className="py-28 px-20 overflow-hidden" style={{background:'var(--bg)'}}>
+    <section id="services" className="py-16 md:py-28 px-5 md:px-12 lg:px-20 overflow-hidden" style={{background:'var(--bg)'}}>
       <div className="max-w-[1200px] mx-auto">
-        <div ref={hRef} className="grid grid-cols-2 gap-16 items-end mb-16">
+        <div ref={hRef} className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 items-end mb-12 md:mb-16">
           <motion.div initial={{opacity:0,x:-36}} animate={hIn?{opacity:1,x:0}:{}} transition={{duration:.8,ease:[0.23,1,0.32,1]}}>
             <h2 className="font-black tracking-[-0.03em] text-[var(--ink)]" style={{fontSize:'clamp(2rem,3.8vw,3.4rem)',lineHeight:1.05}}>
               Everything Your Business<br/>Needs, Under One Roof
             </h2>
           </motion.div>
         </div>
-        <div className="grid grid-cols-3 gap-5">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
           {services.map((s,i)=><Card key={s.name} s={s} i={i}/>)}
         </div>
       </div>

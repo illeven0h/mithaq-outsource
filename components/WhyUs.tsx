@@ -13,8 +13,8 @@ export default function WhyUs(){
   const ref=useRef(null)
   const inView=useInView(ref,{once:true,margin:'-80px'})
   return (
-    <section id="why" className="py-28 px-20 overflow-hidden" style={{background:'var(--bg2)'}}>
-      <div className="max-w-[1200px] mx-auto grid grid-cols-2 gap-28 items-center">
+    <section id="why" className="py-16 md:py-28 px-5 md:px-12 lg:px-20 overflow-hidden" style={{background:'var(--bg2)'}}>
+      <div className="max-w-[1200px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-28 items-center">
         <div ref={ref}>
           <motion.div initial={{opacity:0,x:-36}} animate={inView?{opacity:1,x:0}:{}} transition={{duration:.8}}>
             <h2 className="font-black tracking-[-0.03em] text-[var(--ink)] mb-4" style={{fontSize:'clamp(2rem,3.8vw,3.4rem)',lineHeight:1.05}}>
@@ -45,7 +45,7 @@ export default function WhyUs(){
 
         {/* Animated panel */}
         <motion.div initial={{opacity:0,x:36}} animate={inView?{opacity:1,x:0}:{}} transition={{duration:.9,delay:.2}}
-          className="relative h-[520px] flex items-center justify-center">
+          className="hidden lg:flex relative h-[520px] items-center justify-center">
           <svg className="absolute inset-0 w-full h-full" viewBox="0 0 420 520" fill="none">
             {[['70','100','210','260','rgba(13,158,135,.15)','2'],['350','100','210','260','rgba(184,147,74,.12)','2.4'],
               ['70','420','210','260','rgba(13,158,135,.12)','1.8'],['350','420','210','260','rgba(184,147,74,.10)','2.2']].map(([x1,y1,x2,y2,c,dur],i)=>(

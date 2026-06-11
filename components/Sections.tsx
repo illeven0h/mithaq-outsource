@@ -20,7 +20,7 @@ export function Process(){
   const ref=useRef(null)
   const inView=useInView(ref,{once:true,margin:'-80px'})
   return (
-    <section id="process" className="py-28 px-20" style={{background:'var(--bg)'}}>
+    <section id="process" className="py-16 md:py-28 px-5 md:px-12 lg:px-20" style={{background:'var(--bg)'}}>
       <div className="max-w-[1200px] mx-auto">
         <motion.div initial={{opacity:0,y:36}} animate={inView?{opacity:1,y:0}:{}} transition={{duration:.8}}
           ref={ref} className="text-center mb-20">
@@ -31,7 +31,7 @@ export function Process(){
             A structured approach that turns complexity into clarity and clarity into results.
           </p>
         </motion.div>
-        <div className="grid grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {steps.map((s,i)=>(
             <motion.div key={s.n}
               initial={{opacity:0,y:40}} animate={inView?{opacity:1,y:0}:{}}
@@ -65,9 +65,9 @@ export function Testimonials(){
   const ref=useRef(null)
   const inView=useInView(ref,{once:true,margin:'-80px'})
   return (
-    <section id="testimonials" className="py-28 px-20" style={{background:'var(--bg2)'}}>
+    <section id="testimonials" className="py-16 md:py-28 px-5 md:px-12 lg:px-20" style={{background:'var(--bg2)'}}>
       <div className="max-w-[1200px] mx-auto">
-        <div ref={ref} className="grid grid-cols-2 gap-16 items-end mb-14">
+        <div ref={ref} className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 items-end mb-10 md:mb-14">
           <motion.div initial={{opacity:0,x:-36}} animate={inView?{opacity:1,x:0}:{}} transition={{duration:.8}}>
             <h2 className="font-black tracking-[-0.03em] text-[var(--ink)]" style={{fontSize:'clamp(2rem,3.8vw,3.4rem)',lineHeight:1.05}}>
               Clients Who<br/>Saw the Difference
@@ -79,7 +79,7 @@ export function Testimonials(){
             </p>
           </motion.div>
         </div>
-        <div className="grid grid-cols-3 gap-5">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-5 md:gap-8">
           {testimonials.map((t,i)=>(
             <motion.div key={t.name}
               initial={{opacity:0,y:36}} animate={inView?{opacity:1,y:0}:{}}
@@ -120,7 +120,7 @@ export function FinalCTA(){
   }
 
   return (
-    <section id="contact" className="py-40 px-20 relative overflow-hidden text-center" style={{background:'var(--ink)'}}>
+    <section id="contact" className="py-24 md:py-40 px-5 md:px-20 relative overflow-hidden text-center" style={{background:'var(--ink)'}}>
       <div className="absolute inset-0 pointer-events-none" style={{
         background:'radial-gradient(ellipse 60% 80% at 20% 50%,rgba(13,158,135,.18) 0%,transparent 60%),radial-gradient(ellipse 50% 60% at 80% 50%,rgba(184,147,74,.1) 0%,transparent 55%)'
       }}/>
@@ -144,14 +144,14 @@ export function FinalCTA(){
           </p>
 
           {/* Contact details */}
-          <div className="flex items-center justify-center gap-8 mb-10">
+          <div className="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-8 mb-10">
             <a href={`mailto:${email}`}
               className="flex items-center gap-2 no-underline transition-opacity duration-300 hover:opacity-80"
               style={{color:'rgba(255,255,255,.75)'}}>
               <span className="text-[var(--teal)] text-[1rem]">✉</span>
               <span className="text-[0.95rem] font-medium">{email}</span>
             </a>
-            <div style={{width:'1px',height:'18px',background:'rgba(255,255,255,.15)'}}/>
+            <div className="hidden md:block" style={{width:'1px',height:'18px',background:'rgba(255,255,255,.15)'}}/>
             <a href={`tel:${phone.replace(/\D/g,'')}`}
               className="flex items-center gap-2 no-underline transition-opacity duration-300 hover:opacity-80"
               style={{color:'rgba(255,255,255,.75)'}}>
@@ -177,11 +177,11 @@ export function FinalCTA(){
 }
 export function Footer(){
   return (
-    <footer className="px-20 pt-12 pb-8" style={{background:'var(--bg)',borderTop:'1px solid var(--border)'}}>
+    <footer className="px-5 md:px-12 lg:px-20 pt-10 md:pt-12 pb-8" style={{background:'var(--bg)',borderTop:'1px solid var(--border)'}}>
       <div className="max-w-[1200px] mx-auto">
 
         {/* Top row */}
-        <div className="flex items-start justify-between gap-12 mb-10">
+        <div className="flex flex-col md:flex-row md:items-start justify-between gap-8 md:gap-12 mb-10">
 
           {/* Logo */}
           <div className="flex items-start">

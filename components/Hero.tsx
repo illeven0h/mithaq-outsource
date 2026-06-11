@@ -31,7 +31,7 @@ export default function Hero() {
       <div className="relative z-10 max-w-[1200px] mx-auto">
         
         {/* HERO CONTENT */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center">
           
           {/* LEFT CONTENT */}
           <div className="flex flex-col items-start text-left">
@@ -81,7 +81,7 @@ export default function Hero() {
             >
               <a
                 href="#services"
-                className="inline-flex items-center gap-2 px-9 py-4 rounded-full font-semibold text-white text-[1rem] no-underline transition-all duration-300 hover:-translate-y-0.5"
+                className="inline-flex items-center gap-2 px-6 py-3 md:px-9 md:py-4 rounded-full font-semibold text-white text-[0.9rem] md:text-[1rem] no-underline transition-all duration-300 hover:-translate-y-0.5"
                 style={{ background: 'var(--ink)' }}
                 onMouseEnter={(e) => {
                   ;(e.currentTarget as HTMLElement).style.background =
@@ -101,7 +101,7 @@ export default function Hero() {
 
               <a
                 href="#why"
-                className="inline-flex items-center gap-2 px-9 py-4 rounded-full font-medium text-[var(--ink)] text-[1rem] no-underline transition-all duration-300 hover:-translate-y-0.5 hover:border-[var(--teal)] hover:text-[var(--teal)]"
+                className="inline-flex items-center gap-2 px-6 py-3 md:px-9 md:py-4 rounded-full font-medium text-[var(--ink)] text-[0.9rem] md:text-[1rem] no-underline transition-all duration-300 hover:-translate-y-0.5 hover:border-[var(--teal)] hover:text-[var(--teal)]"
                 style={{ border: '1.5px solid var(--border2)' }}
               >
                 Why Mithaq
@@ -110,7 +110,7 @@ export default function Hero() {
           </div>
 
           {/* RIGHT IMAGE */}
-          <div className="flex items-center justify-center">
+          <div className="hidden lg:flex items-center justify-center">
             <Image
               src="/hero-image.svg"
               alt="Hero Illustration"
@@ -124,7 +124,7 @@ export default function Hero() {
         {/* STATS */}
         <motion.div
           {...fu(.85)}
-          className="mt-24 flex flex-wrap justify-center items-center gap-10 lg:gap-16"
+          className="mt-16 lg:mt-24 flex flex-wrap justify-center items-center gap-6 lg:gap-16"
         >
           {[
             ['98', '%', 'Client Retention'],
