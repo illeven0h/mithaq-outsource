@@ -12,7 +12,10 @@ const urbanist = Urbanist({
 
 export const metadata: Metadata = {
   title: 'Mithaq Outsource',
-  description: 'Premium outsourcing, digital solutions, and customer operations — engineered for ambitious businesses that demand excellence at every touchpoint.',
+  description: 'Premium outsourcing, digital solutions, and customer operations engineered for ambitious businesses that demand excellence at every touchpoint.',
+  icons: {
+    icon: '/favicon.png',
+  },
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
