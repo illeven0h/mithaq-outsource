@@ -2,6 +2,9 @@
 import { useEffect, useState } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
+import { FinalCTA } from '/components/Sections'
+
+
 
 const navLinks = [
   ['Services', '#services'],
@@ -40,7 +43,7 @@ export default function Nav() {
           className="no-underline flex items-center transition-opacity duration-300"
           style={{ opacity: menuOpen ? 0 : 1, pointerEvents: menuOpen ? 'none' : 'all' }}
         >
-          <Image src="/logo.png" alt="Mithaq Logo" width={150} height={50} />
+          <Image src="/logo.png" alt="Mithaq Logo" width={150} height={200} />
         </Link>
 
         {/* Desktop links */}
@@ -58,7 +61,9 @@ export default function Nav() {
         </ul>
 
         {/* Desktop CTA */}
-        <button className="hidden md:block bg-[var(--ink)] text-white border-none px-6 py-2.5 rounded-full text-[0.875rem] font-semibold font-[family-name:var(--font-urbanist)] cursor-pointer transition-all duration-300 hover:bg-[var(--teal)] hover:-translate-y-px hover:shadow-[0_8px_24px_rgba(13,158,135,0.3)]">
+        <button 
+        onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
+        className="hidden md:block bg-[var(--ink)] text-white border-none px-6 py-2.5 rounded-full text-[0.875rem] font-semibold font-[family-name:var(--font-urbanist)] cursor-pointer transition-all duration-300 hover:bg-[var(--teal)] hover:-translate-y-px hover:shadow-[0_8px_24px_rgba(13,158,135,0.3)]">
           Get in Touch
         </button>
 

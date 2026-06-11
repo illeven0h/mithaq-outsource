@@ -12,7 +12,7 @@ const steps=[
   {n:'06',t:'Growth',d:"Ongoing partnership, iteration, and expansion. We're not a vendor we're the team that grows as you grow."},
 ]
 
-  const email = 'mithaqtel@gmail.com.com'
+  const email = 'mithaqtel@gmail.com'
   const phone = '+92 308 0700708'
   const phone2 = '051 4493050'
 
@@ -229,7 +229,7 @@ export function Footer(){
 
         {/* Bottom: copyright centered */}
         <div style={{borderTop:'1px solid var(--border)'}} className="pt-6 text-center">
-          <div className="text-[0.78rem] text-[var(--ink3)]">© 2025 Mithaq Outsource. All rights reserved.</div>
+          <div className="text-[0.78rem] text-[var(--ink3)]">© 2026 Mithaq Outsource. All rights reserved.</div>
         </div>
 
       </div>
